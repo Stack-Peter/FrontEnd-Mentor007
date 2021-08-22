@@ -1,0 +1,157 @@
+h1,
+span,
+button,
+::placeholder,
+p {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.father {
+  text-align: center;
+}
+
+.logo {
+  padding: 60px 0 40px 0;
+}
+
+h1 {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin: 0 0 10px 0;
+}
+
+h1 strong {
+  color: black;
+}
+
+.onSpan {
+  margin-bottom: 25px;
+}
+
+form input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid hsl(223, 100%, 88%);
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+button {
+  padding: 15px;
+  border-radius: 25px;
+  border: 1px solid hsl(223, 87%, 63%);
+  background: hsl(223, 87%, 63%);
+  color: white;
+  font-weight: 600;
+  width: 150px;
+  margin-left: 10px;
+}
+
+button:hover {
+  background: hsl(223, 100%, 88%);
+  border: 1px solid hsl(223, 100%, 88%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.main-img {
+  max-width: 500px;
+  padding: 50px;
+  margin-top: 35px;
+}
+
+ion-icon {
+  font-size: 32px;
+  margin: 0 7px 0 7px;
+  color: hsl(223, 87%, 63%);
+}
+
+ion-icon:hover {
+  color: hsl(223, 100%, 88%);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.copy {
+  font-size: 0.8em;
+}
+
+.empty::after {
+  display: block;
+  content: "Whoops! It looks like you forgot to add your email.";
+  color: red;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 13px;
+  padding-top: 7px;
+  margin-right: 163px;
+}
+
+.wrong::after {
+  display: block;
+  content: "Please provide a valid email address.";
+  color: red;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 13px;
+  padding-top: 7px;
+  margin-right: 240px;
+}
+
+.empty-mobile::after {
+  display: block;
+  content: "Whoops! It looks like you forgot to add your email.";
+  color: red;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.wrong-mobile::after {
+  display: block;
+  content: "Please provide a valid email address.";
+  color: red;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 620px) {
+  .main-img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  span {
+    font-size: 0.9em;
+  }
+  form {
+    display: block;
+    text-align: center;
+  }
+  form input {
+    margin-bottom: 15px;
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .main-img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .main-img {
+    padding: 50px 0 50px 0;
+  }
+}
